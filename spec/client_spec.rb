@@ -111,5 +111,48 @@ module ZypeSDK
         end
       end
     end
+
+    describe '#video' do
+      subject(:video) { client.video(video_id) }
+
+      let(:video_id) { ENV['ZYPE_VALID_VIDEO_ID'] }
+
+      context 'with invalid app key' do
+        let(:app_key) { 'invalid-app-key' }
+
+        it 'returns an unauthorized response' do
+          VCR.use_cassette('video/invalid_app_key') do
+            response = video
+
+            expect(response.status).to eq(401)
+            expect(response.content).to include('message' => 'Invalid or missing authentication.')
+          end
+        end
+      end
+
+      context 'with non existent video id' do
+        let(:video_id) { 'non-existent' }
+
+        it 'returns a not found response' do
+          VCR.use_cassette('video/non_existent_id') do
+            response = video
+
+            expect(response.status).to eq(404)
+            expect(response.content).to include('message' => 'Video not found')
+          end
+        end
+      end
+
+      context 'with valid existent video id' do
+        it 'returns a valid response' do
+          VCR.use_cassette('video/existent_id') do
+            response = video
+
+            expect(response.status).to eq(200)
+            expect(response.content).to have_key('response')
+          end
+        end
+      end
+    end
   end
 end

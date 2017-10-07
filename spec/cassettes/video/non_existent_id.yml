@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zype.com/videos/non-existent?app_key=XWny5j0V89yb1uZu6SI_D95EADV5FzBYldE9Ny0_q0GOzcWLiruPyhN-f2Pcyohf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 07 Oct 2017 19:56:10 GMT
+      Server:
+      - nginx/1.10.1
+      Set-Cookie:
+      - incap_ses_469_1226855=mgwwcOseJzfNvDKMFjmCBlkx2VkAAAAAOtErGDgdryubYAdHT2SUDA==;
+        path=/; Domain=.zype.com
+      - nlbi_1226855=/HUkQRgBwHQgjwKF1wxkKQAAAAANhj7RqxHeTpCIknA4EeEE; path=/; Domain=.zype.com
+      - request_method=GET; path=/
+      - visid_incap_1226855=pJtqaR33SgybiGyssBV7Vlkx2VkAAAAAQUIPAAAAAACclpwbqStgq/BlUjz/+BMq;
+        expires=Sun, 07 Oct 2018 07:22:46 GMT; path=/; Domain=.zype.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 3a259210-0e2d-4d13-a59a-c1d802082c26
+      X-Runtime:
+      - '0.018228'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+      X-Iinfo:
+      - 2-56522738-56522769 NNNN CT(27 71 0) RT(1507406169462 195) q(0 0 1 -1) r(2
+        2) U5
+      X-Cdn:
+      - Incapsula
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Video not found"}'
+    http_version: 
+  recorded_at: Sat, 07 Oct 2017 19:56:10 GMT
+recorded_with: VCR 3.0.3

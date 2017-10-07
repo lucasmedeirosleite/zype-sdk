@@ -25,6 +25,7 @@ module ZypeSDK
     end
 
     def video(id)
+      get("videos/#{id}")
     end
 
     def videos(params = {})
