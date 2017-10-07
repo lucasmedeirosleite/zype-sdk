@@ -1,9 +1,10 @@
-# frozen_string_literal
+# frozen_string_literal: true
 
 require 'caze'
 
 module ZypeSDK
   module UseCases
+    # Public: Video by id use case
     class Video
       include Caze
 
