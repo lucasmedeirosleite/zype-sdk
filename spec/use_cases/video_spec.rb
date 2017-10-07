@@ -35,7 +35,7 @@ module ZypeSDK
           end
           let(:content) { double(:content) }
 
-          it 'returns an unauthorized result' do
+          it 'returns a not found result' do
             expect(video.status).to eq(:not_found)
             expect(video.content).to eq(content)
           end
@@ -47,7 +47,7 @@ module ZypeSDK
           end
           let(:content) { double(:content) }
 
-          it 'returns an unauthorized result' do
+          it 'returns a valid result' do
             expect(video.status).to eq(:ok)
             expect(video.content).to eq(content)
           end

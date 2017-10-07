@@ -5,6 +5,7 @@ require 'caze'
 require_relative './zype_sdk/client'
 require_relative './zype_sdk/version'
 
+require_relative './zype_sdk/use_cases/login'
 require_relative './zype_sdk/use_cases/video'
 require_relative './zype_sdk/use_cases/videos'
 
@@ -12,6 +13,7 @@ require_relative './zype_sdk/use_cases/videos'
 module ZypeSDK
   include Caze
 
+  has_use_case :video, UseCases::Login
   has_use_case :video, UseCases::Video
   has_use_case :videos, UseCases::Videos
 
