@@ -1,10 +1,13 @@
 # frozen_string_literal: true
 
+require 'simplecov'
+SimpleCov.start
+
 require 'bundler/setup'
 require 'pry-byebug'
-require 'zype_sdk'
 require 'vcr'
 require 'webmock'
+require 'zype_sdk'
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/cassettes'
