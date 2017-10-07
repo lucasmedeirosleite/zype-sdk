@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-SimpleCov.start
+if ENV['COVERAGE']
+  require 'coveralls'
+  Coveralls.wear!
+end
 
 require 'bundler/setup'
 require 'pry-byebug'

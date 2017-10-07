@@ -5,20 +5,8 @@ rvm:
 before_install: gem install bundler -v 1.15.4
 
 env:
-  global:
-    - CC_TEST_REPORTER_ID=7ab1217df716507ebc12270a4e4499d6e6ab33079bca699f56160f95ce2a654d
-
-env:
   CODECLIMATE_REPO_TOKEN: 7ab1217df716507ebc12270a4e4499d6e6ab33079bca699f56160f95ce2a654d
-
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
 
 script:
   - bundle install
   - bundle exec rspec
-
-after_script:
-  - ./cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
