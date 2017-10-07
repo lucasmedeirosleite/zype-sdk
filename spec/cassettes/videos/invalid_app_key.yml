@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zype.com/videos?app_key=invalid-app-key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 07 Oct 2017 19:35:50 GMT
+      Server:
+      - nginx/1.10.1
+      Set-Cookie:
+      - incap_ses_469_1226855=8lI3R0+8Q0Z6dSiMFjmCBpUs2VkAAAAAKpmgb1Xf8oZLJytjMaiX5A==;
+        path=/; Domain=.zype.com
+      - nlbi_1226855=DedMKcFcS0Vw13DC1wxkKQAAAAD+/ercgfFpxkdBvpTuvruo; path=/; Domain=.zype.com
+      - request_method=GET; path=/
+      - visid_incap_1226855=Km+Ej947TF+SyD1Nv8YjZpUs2VkAAAAAQUIPAAAAAADLS+edw41PuRtuX392h4W1;
+        expires=Sun, 07 Oct 2018 07:22:46 GMT; path=/; Domain=.zype.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 7e36df53-a04c-43c3-b8ff-c55f0ec2252d
+      X-Runtime:
+      - '0.014294'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+      X-Iinfo:
+      - 2-56322008-56322033 NNNN CT(0 0 0) RT(1507404949286 154) q(0 0 0 -1) r(0 0)
+        U5
+      X-Cdn:
+      - Incapsula
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Invalid or missing authentication."}'
+    http_version: 
+  recorded_at: Sat, 07 Oct 2017 19:35:50 GMT
+recorded_with: VCR 3.0.3

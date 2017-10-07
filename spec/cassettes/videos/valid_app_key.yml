@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zype.com/videos?app_key=XWny5j0V89yb1uZu6SI_D95EADV5FzBYldE9Ny0_q0GOzcWLiruPyhN-f2Pcyohf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '1728000'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 07 Oct 2017 19:35:30 GMT
+      Etag:
+      - '"e9f2b007416b03f63b8d3d44ce3abba4"'
+      Server:
+      - nginx/1.10.1
+      Set-Cookie:
+      - incap_ses_469_1226855=RVJza+mlsVecsyeMFjmCBoEs2VkAAAAAXkcu6RpjH4N+FBF4im2s3w==;
+        path=/; Domain=.zype.com
+      - nlbi_1226855=+0bWOxm/bx+tMgj51wxkKQAAAACpC/Nvk84Mx4JLbjXpZ7ny; path=/; Domain=.zype.com
+      - request_method=GET; path=/
+      - visid_incap_1226855=hKoSBk1tQSehGix+X8+zTzos2VkAAAAAQUIPAAAAAAByhE7xZEO+cDlDh9/LJt4E;
+        expires=Sun, 07 Oct 2018 07:22:48 GMT; path=/; Domain=.zype.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - e12d9518-0b4e-4c09-900a-906542fdaf51
+      X-Runtime:
+      - '0.120534'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+      X-Iinfo:
+      - 9-87635417-87635462 NNNN CT(45 29 0) RT(1507404929522 170) q(0 0 1 1) r(3
+        3) U5
+      X-Cdn:
+      - Incapsula
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response":[{"_id":"56a7b83e69702d2f83abdcb7","active":true,"categories":[{"_id":"56a7b83e69702d2f83acdcb7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:34.482-05:00","custom_attributes":{},"description":"Kyle
+        Mooney puts his interviewing skills to the test at the circus. Aired 3/28/15","disable_at":null,"discovery_url":null,"duration":193,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2015-03-29T16:21:19.000-04:00","purchase_price":"1.0","purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":1,"rental_price":"1.0","rental_required":false,"request_count":237,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":true,"title":"Circus
+        - Saturday Night Live","updated_at":"2017-09-26T11:18:58.926-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/bj3D2RwyhuU/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"bj3D2RwyhuU","short_description":"Kyle
+        Mooney puts his interviewing skills to the test at the circus. Aired 3/28/15"},{"_id":"56a7b83069702d2f8309d9b7","active":true,"categories":[{"_id":"56a7b83069702d2f830ad9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:20.712-05:00","custom_attributes":{},"description":"When
+        the popular kids (Beck Bennett, Vanessa Bayer, Kate McKinnon, Sasheer Zamata,
+        Jon Rudnitsky) try to play a trick on the new girl (Ronda Rousey), she turns
+        the tables on them.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":260,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-24T03:59:03.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":820,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"Love
+        Struck - SNL","updated_at":"2017-09-27T10:39:19.710-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/jhz862KOstA/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/jhz862KOstA/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/jhz862KOstA/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/jhz862KOstA/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/jhz862KOstA/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"jhz862KOstA","short_description":"When
+        the popular kids (Beck Bennett, Vanessa Bayer, Kate McKinnon, Sasheer Zamata,
+        Jon Rudnitsky) try to play a trick on the new girl (Ronda Rousey), she turns
+        the tables on them.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n..."},{"_id":"56a7b83069702d2f830cd9b7","active":true,"categories":[{"_id":"56a7b83069702d2f830dd9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:20.760-05:00","custom_attributes":{},"description":"Sarah
+        Palin (Tina Fey) endorses Donald Trump (Darrell Hammond) for president at
+        an Iowa campaign stop.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":310,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-24T04:00:53.000-05:00","purchase_price":"1.0","purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":1,"rental_price":"1.0","rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":true,"title":"Palin
+        Endorsement Cold Open - SNL","updated_at":"2017-09-25T12:53:27.480-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/0pinZNYxQeo/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/0pinZNYxQeo/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/0pinZNYxQeo/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/0pinZNYxQeo/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/0pinZNYxQeo/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"0pinZNYxQeo","short_description":"Sarah
+        Palin (Tina Fey) endorses Donald Trump (Darrell Hammond) for president at
+        an Iowa campaign stop.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nF..."},{"_id":"56a7b83069702d2f830fd9b7","active":true,"categories":[{"_id":"56a7b83069702d2f8310d9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:20.808-05:00","custom_attributes":{},"description":"All
+        of the Best Actor nominees (Taran Killam, Pete Davidson, Beck Bennett, Bobby
+        Moynihan, Jon Rudnitsky) at the Screen Guild Awards share something in common.\n\nSubscribe
+        to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload the SNL
+        App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more SNL 40th
+        Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":216,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-24T03:57:48.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"Screen
+        Guild Awards - SNL","updated_at":"2017-09-27T10:11:53.348-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/ospx7tXWYbI/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/ospx7tXWYbI/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/ospx7tXWYbI/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/ospx7tXWYbI/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/ospx7tXWYbI/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"ospx7tXWYbI","short_description":"All
+        of the Best Actor nominees (Taran Killam, Pete Davidson, Beck Bennett, Bobby
+        Moynihan, Jon Rudnitsky) at the Screen Guild Awards share something in common.\n\nSubscribe
+        to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload the SNL
+        Ap..."},{"_id":"56a7b83069702d2f8312d9b7","active":true,"categories":[{"_id":"56a7b83069702d2f8313d9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:20.857-05:00","custom_attributes":{},"description":"Seven
+        women (Vanessa Bayer, Kate McKinnon, Ronda Rousey, Cecily Strong, Aidy Bryant,
+        Sasheer Zamata, Selena Gomez) compete for the affections of a bland man named
+        Dan (Taran Killam).\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":321,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-24T03:59:49.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":1,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"Bland
+        Man - SNL","updated_at":"2017-09-26T02:41:05.901-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/JDy3E05gLMc/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/JDy3E05gLMc/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/JDy3E05gLMc/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/JDy3E05gLMc/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/JDy3E05gLMc/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"JDy3E05gLMc","short_description":"Seven
+        women (Vanessa Bayer, Kate McKinnon, Ronda Rousey, Cecily Strong, Aidy Bryant,
+        Sasheer Zamata, Selena Gomez) compete for the affections of a bland man named
+        Dan (Taran Killam).\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RR..."},{"_id":"56a7b83069702d2f8315d9b7","active":true,"categories":[{"_id":"56a7b83069702d2f8316d9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:20.906-05:00","custom_attributes":{},"description":"Ronda
+        Rousey hosts Saturday Night Live tonight, January 23, 2016 with musical guest
+        Selena Gomez.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor more
+        SNL 40th Anniversary Special: http://goo.gl/gLyPTc\n\nGet more SNL on Hulu
+        Plus: http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":47,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-23T19:42:10.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"Winter
+        Storm Jonas Won''t Stop Leslie Jones or SNL","updated_at":"2017-09-26T19:17:19.224-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/i5BtBQjzwBM/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/i5BtBQjzwBM/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/i5BtBQjzwBM/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/i5BtBQjzwBM/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/i5BtBQjzwBM/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"i5BtBQjzwBM","short_description":"Ronda
+        Rousey hosts Saturday Night Live tonight, January 23, 2016 with musical guest
+        Selena Gomez.\n\nSubscribe to the SNL channel for more clips: http://goo.gl/24RRTv\n\nDownload
+        the SNL App for free: http://www.nbc.com/saturday-night-live/app\n\nFor mo..."},{"_id":"56a7b83069702d2f8318d9b7","active":true,"categories":[{"_id":"56a7b83069702d2f8319d9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:20.954-05:00","custom_attributes":{},"description":"SNL
+        Host Ronda Rousey and Cecily Strong ask each other questions submitted by
+        fans on Twitter.\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":195,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-22T13:00:01.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"Two-Way
+        Q&A: Ronda Rousey and Cecily Strong","updated_at":"2017-09-25T16:10:53.961-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/hAMUegFHj6I/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/hAMUegFHj6I/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/hAMUegFHj6I/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/hAMUegFHj6I/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/hAMUegFHj6I/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"hAMUegFHj6I","short_description":"SNL
+        Host Ronda Rousey and Cecily Strong ask each other questions submitted by
+        fans on Twitter.\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc...."},{"_id":"56a7b83069702d2f831bd9b7","active":true,"categories":[{"_id":"56a7b83069702d2f831cd9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.003-05:00","custom_attributes":{},"description":"Bonus
+        footage from \"Undercover Boss: Starkiller Base,\" where Kylo Ren (Adam Driver)
+        goes undercover as Matt, a radar technician.\n\nGet more SNL on Hulu Plus:
+        http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-live\nFull
+        Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike SNL: https://www.facebook.com/snl\nFollow
+        SNL: https://twitter.com/nbcsnl\nSNL Tumblr: http://nbcsnl.tumblr.com/\nSNL
+        Instagram: http://instagram.com/nbcsnl \nSNL Google+: https://plus.google.com/+SaturdayNightLive/
+        \nSNL Pinterest: http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":215,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-22T08:00:03.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"Undercover
+        Boss: Starkiller Base Behind The Scenes","updated_at":"2017-09-25T10:42:05.503-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/gJ3mGQAFS6I/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/gJ3mGQAFS6I/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/gJ3mGQAFS6I/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/gJ3mGQAFS6I/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/gJ3mGQAFS6I/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"gJ3mGQAFS6I","short_description":"Bonus
+        footage from \"Undercover Boss: Starkiller Base,\" where Kylo Ren (Adam Driver)
+        goes undercover as Matt, a radar technician.\n\nGet more SNL on Hulu Plus:
+        http://www.hulu.com/saturday-night-live\n\nGet more SNL: http://www.nbc.com/saturday-night-l..."},{"_id":"56a7b83169702d2f831ed9b7","active":true,"categories":[{"_id":"56a7b83169702d2f831fd9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.051-05:00","custom_attributes":{},"description":"Ronda
+        Rousey hosts Saturday Night Live on January 23, 2016 with musical guest Selena
+        Gomez.\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":52,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-21T17:12:39.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"SNL
+        Host Ronda Rousey and Selena Gomez Call Boys with Cecily Strong","updated_at":"2017-09-21T13:21:42.213-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/b6S5EJNtP30/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/b6S5EJNtP30/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/b6S5EJNtP30/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/b6S5EJNtP30/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/b6S5EJNtP30/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"b6S5EJNtP30","short_description":"Ronda
+        Rousey hosts Saturday Night Live on January 23, 2016 with musical guest Selena
+        Gomez.\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com..."},{"_id":"56a7b83169702d2f8321d9b7","active":true,"categories":[{"_id":"56a7b83169702d2f8322d9b7","category_id":"56a7b81d69702d2f8329d3b7","title":"YouTube
+        Channel","value":["Saturday Night Live"]}],"country":null,"created_at":"2016-01-26T13:17:21.280-05:00","custom_attributes":{},"description":"Ronda
+        Rousey hosts Saturday Night Live on January 23, 2016 with musical guest Selena
+        Gomez.\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com/saturday-night-live/video\n\nLike
+        SNL: https://www.facebook.com/snl\nFollow SNL: https://twitter.com/nbcsnl\nSNL
+        Tumblr: http://nbcsnl.tumblr.com/\nSNL Instagram: http://instagram.com/nbcsnl
+        \nSNL Google+: https://plus.google.com/+SaturdayNightLive/ \nSNL Pinterest:
+        http://www.pinterest.com/nbcsnl/","disable_at":null,"discovery_url":null,"duration":115,"enable_at":null,"episode":null,"featured":false,"foreign_id":null,"friendly_title":null,"keywords":[],"mature_content":false,"on_air":false,"ott_description":null,"pass_required":false,"preview_ids":[],"program_guide_id":null,"published_at":"2016-01-20T16:40:51.000-05:00","purchase_price":null,"purchase_required":false,"rating":0.0,"related_playlist_ids":[],"rental_duration":null,"rental_price":null,"rental_required":false,"request_count":0,"season":null,"site_id":"56a7b4a369702d1927000000","source_id":null,"status":"created","subscription_ads_enabled":true,"subscription_required":false,"title":"SNL
+        Host Ronda Rousey Lets Beck \"The Wreck\" Bennett Try His Noggin Lock","updated_at":"2017-09-22T19:51:10.428-04:00","zobject_ids":[],"crunchyroll_id":null,"hulu_id":null,"mrss_id":null,"kaltura_id":null,"thumbnails":[{"aspect_ratio":1.33,"height":90,"name":null,"url":"https://i.ytimg.com/vi/G5_4wcVyGUc/default.jpg","width":120},{"aspect_ratio":1.78,"height":180,"name":null,"url":"https://i.ytimg.com/vi/G5_4wcVyGUc/mqdefault.jpg","width":320},{"aspect_ratio":1.33,"height":360,"name":null,"url":"https://i.ytimg.com/vi/G5_4wcVyGUc/hqdefault.jpg","width":480},{"aspect_ratio":1.33,"height":480,"name":null,"url":"https://i.ytimg.com/vi/G5_4wcVyGUc/sddefault.jpg","width":640},{"aspect_ratio":1.78,"height":720,"name":null,"url":"https://i.ytimg.com/vi/G5_4wcVyGUc/maxresdefault.jpg","width":1280}],"transcoded":false,"vimeo_id":null,"youtube_id":"G5_4wcVyGUc","short_description":"Ronda
+        Rousey hosts Saturday Night Live on January 23, 2016 with musical guest Selena
+        Gomez.\n\nGet more SNL on Hulu Plus: http://www.hulu.com/saturday-night-live\n\nGet
+        more SNL: http://www.nbc.com/saturday-night-live\nFull Episodes: http://www.nbc.com..."}],"pagination":{"current":1,"previous":null,"next":2,"per_page":10,"pages":25}}'
+    http_version: 
+  recorded_at: Sat, 07 Oct 2017 19:35:30 GMT
+recorded_with: VCR 3.0.3

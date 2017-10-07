@@ -13,7 +13,7 @@ module ZypeSDK
     let(:app_key) { ENV['ZYPE_APP_KEY'] }
     let(:client_id) { ENV['ZYPE_CLIENT_ID'] }
     let(:client_secret) { ENV['ZYPE_CLIENT_SECRET'] }
-
+    
     describe 'api' do
       it { is_expected.to respond_to(:login) }
       it { is_expected.to respond_to(:video) }
@@ -62,6 +62,51 @@ module ZypeSDK
             expect(response.content.keys).to include(
               'access_token', 'token_type', 'expires_in', 'refresh_token', 'scope', 'created_at'
             )
+          end
+        end
+      end
+    end
+    
+    describe '#videos' do
+      subject(:videos) { client.videos(params) }
+
+      let(:params) { {} }
+
+      context 'with invalid app key' do
+        let(:app_key) { 'invalid-app-key' }
+
+        it 'returns an unauthorized response' do
+          VCR.use_cassette('videos/invalid_app_key') do
+            response = videos
+
+            expect(response.status).to eq(401)
+            expect(response.content).to include('message' => 'Invalid or missing authentication.')
+          end
+        end
+      end
+
+      context 'with valid app key' do
+        it 'returns a valid response' do
+          VCR.use_cassette('videos/valid_app_key') do
+            response = videos
+
+            expect(response.status).to eq(200) 
+            expect(response.content).to have_key('response')
+            expect(response.content).to have_key('pagination')
+          end
+        end
+      end
+
+      context 'with valid app key and pagination params' do
+        let(:params) { { page: 2, per_page: 15 } }
+
+        it 'returns a valid response' do
+          VCR.use_cassette('videos/valid_app_key_and_params') do
+            response = videos
+
+            expect(response.status).to eq(200) 
+            expect(response.content).to have_key('response')
+            expect(response.content).to have_key('pagination')
           end
         end
       end

@@ -4,7 +4,7 @@ require 'forwardable'
 require 'httparty'
 
 module ZypeSDK
-  # Public: HTTP wrapper responsible to communicate with the Zype WEB API
+  # Private: HTTP wrapper responsible to communicate with the Zype WEB API
   class Client
     extend Forwardable
 
@@ -28,6 +28,7 @@ module ZypeSDK
     end
 
     def videos(params = {})
+      get('videos', params)
     end
 
     private
@@ -38,5 +39,10 @@ module ZypeSDK
     attr_reader :config
 
     def_delegators :@config, :app_key, :client_id, :client_secret
+
+    def get(uri, params = {})
+      zype_response = HTTParty.get("#{BASE_API_URI}/#{uri}?app_key=#{app_key}", query: params)
+      Response.new(zype_response.code, zype_response.parsed_response)
+    end
   end
 end
