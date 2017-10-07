@@ -35,16 +35,34 @@ module ZypeSDK
             response = login
 
             expect(response.status).to eq(401)
-            expect(response.content).to include('error' => 'invalid_grant')
+            expect(response.content).to include('error' => 'invalid_client')
           end
         end
       end
 
       context 'with invalid credentials' do
         let(:username) { 'invalid@example.com' }
+
+        it 'returns an unauthorized response' do
+          VCR.use_cassette('login/invalid_credentials') do
+            response = login
+
+            expect(response.status).to eq(401)
+            expect(response.content).to include('error' => 'invalid_grant')
+          end
+        end
       end
 
       context 'with valid credentials, client id and client secret' do
+        it 'returns a valid response' do
+          VCR.use_cassette('login/valid_credentials') do
+            response = login
+
+            expect(response.status).to eq(200)
+            expect(response.content.keys).to include('access_token', 'token_type', 
+              'expires_in', 'refresh_token', 'scope', 'created_at')
+          end
+        end
       end
     end
   end
