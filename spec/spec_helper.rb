@@ -5,6 +5,9 @@ if ENV['COVERAGE']
   Coveralls.wear!
 end
 
+require 'dotenv'
+Dotenv.load
+
 require 'bundler/setup'
 require 'pry-byebug'
 require 'vcr'
