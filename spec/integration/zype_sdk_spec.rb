@@ -5,8 +5,7 @@ require 'spec_helper'
 RSpec.describe ZypeSDK do
   let(:app_key) { ENV['ZYPE_APP_KEY'] }
   let(:client_id) { ENV['ZYPE_CLIENT_ID'] }
-  let(:client_secret) { ENV['ZYPE_CLIENT_SECRET'] } 
-
+  let(:client_secret) { ENV['ZYPE_CLIENT_SECRET'] }
 
   before do
     ZypeSDK.configure do |config|
@@ -45,7 +44,7 @@ RSpec.describe ZypeSDK do
 
   describe '#video' do
     let(:video_id) { ENV['ZYPE_VALID_VIDEO_ID'] }
-    
+
     context 'with invalid app key' do
       let(:app_key) { 'invalid-app-key' }
 

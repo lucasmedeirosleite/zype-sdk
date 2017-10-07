@@ -16,7 +16,7 @@ module ZypeSDK
 
       describe '#get' do
         subject(:videos) { use_case.get }
-        
+
         context 'when an error happened' do
           let(:response) do
             double(:response, status: 401, content: content)

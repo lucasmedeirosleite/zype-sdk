@@ -16,7 +16,7 @@ module ZypeSDK
 
       describe '#get' do
         subject(:video) { use_case.get }
-        
+
         context 'when unauthorized' do
           let(:response) do
             double(:response, status: 401, content: content)
