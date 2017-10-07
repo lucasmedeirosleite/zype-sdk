@@ -5,7 +5,7 @@ require 'spec_helper'
 module ZypeSDK
   module UseCases
     RSpec.describe Login do
-      subject(:use_case) do 
+      subject(:use_case) do
         described_class.new(username: username, password: password, client: client)
       end
 
@@ -14,10 +14,10 @@ module ZypeSDK
       let(:password) { 'a-password' }
 
       before do
-        allow(client).to receive(:login).with(username: username, password: password)
+        allow(client).to receive(:login)
+          .with(username: username, password: password)
           .and_return(response)
       end
-
 
       describe '#login' do
         subject(:login) { use_case.login }

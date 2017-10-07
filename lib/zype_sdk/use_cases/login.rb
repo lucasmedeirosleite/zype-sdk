@@ -4,6 +4,7 @@ require 'caze'
 
 module ZypeSDK
   module UseCases
+    # Public: Use case which performs the login action
     class Login
       include Caze
 
@@ -15,7 +16,7 @@ module ZypeSDK
         200 => :ok,
         401 => :unauthorized,
         500 => :internal_error
-      }
+      }.freeze
 
       def initialize(username:, password:, client: ZypeSDK::Client.new)
         @username = username
