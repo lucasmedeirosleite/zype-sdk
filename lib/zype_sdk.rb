@@ -5,12 +5,14 @@ require 'caze'
 require_relative './zype_sdk/client'
 require_relative './zype_sdk/version'
 
+require_relative './zype_sdk/use_cases/video'
 require_relative './zype_sdk/use_cases/videos'
 
 # Public: Entrypoint to the Zype API universe
 module ZypeSDK
   include Caze
 
+  has_use_case :video, UseCases::Video
   has_use_case :videos, UseCases::Videos
 
   Error = Class.new(RuntimeError).freeze
