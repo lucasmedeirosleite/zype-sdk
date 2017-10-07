@@ -19,7 +19,7 @@ module ZypeSDK
         500 => :internal_error
       }.freeze
 
-      def initialize(video_id, client: ZypeSDK::Client.new)
+      def initialize(video_id, client: ZypeSDK::Client.get)
         @video_id = video_id
         @client = client
       end

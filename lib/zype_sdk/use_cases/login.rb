@@ -18,7 +18,7 @@ module ZypeSDK
         500 => :internal_error
       }.freeze
 
-      def initialize(username:, password:, client: ZypeSDK::Client.new)
+      def initialize(username:, password:, client: ZypeSDK::Client.get)
         @username = username
         @password = password
         @client = client

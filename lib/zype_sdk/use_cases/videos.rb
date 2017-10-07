@@ -18,7 +18,7 @@ module ZypeSDK
         500 => :internal_error
       }.freeze
 
-      def initialize(params = {}, client: ZypeSDK::Client.new)
+      def initialize(params = {}, client: ZypeSDK::Client.get)
         @params = params
         @client = client
       end

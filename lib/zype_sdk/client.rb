@@ -10,6 +10,10 @@ module ZypeSDK
 
     Response = Struct.new(:status, :content)
 
+    def self.get
+      @_client ||= Client.new
+    end
+
     def initialize(config = ZypeSDK)
       @config = config
     end
