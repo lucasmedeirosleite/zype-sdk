@@ -83,6 +83,85 @@ When passing valid credentials, the result will be something like this:
    "created_at"=>1507415028}>
 ```
 
+### Video
+
+You can use the video action like this:
+
+```ruby
+result = ZypeSDK.video('a-video-id')
+```
+
+If for some reason you passed an invalid app key during the sdk setup,
+the result will be something like this:
+
+```console
+=> #<struct ZypeSDK::UseCases::Video::Result
+ status=:unauthorized,
+ content=
+  {"message"=>""message": "Invalid or missing authentication."}>   
+```
+
+When passing a non existent video id:
+
+```console
+=> #<struct ZypeSDK::UseCases::Video::Result
+ status=:not_found,
+ content=
+  {"message": "Video not found"}>
+```
+
+When passing an existent video id:
+
+```console
+=> #<struct ZypeSDK::UseCases::Video::Result
+ status=:ok,
+ content=
+  { "response" => {
+      "_id" => "56a7b83169702d2f8336d9b7",
+      "active" => true,
+      "subscription_required" => false,
+      "title" => "Santa Baby - SNL",
+      "thumbnails" => [
+        {
+            "aspect_ratio" => 1.33,
+            "height" => 90,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/default.jpg",
+            "width"=> 120
+        },
+        {
+            "aspect_ratio" => 1.78,
+            "height" => 180,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/mqdefault.jpg",
+            "width" => 320
+        },
+        {
+            "aspect_ratio" => 1.33,
+            "height" => 360,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/hqdefault.jpg",
+            "width" => 480
+        },
+        {
+            "aspect_ratio" => 1.33,
+            "height" => 480,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/sddefault.jpg",
+            "width" => 640
+        },
+        {
+            "aspect_ratio" => 1.78,
+            "height" => 720,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/maxresdefault.jpg",
+            "width" => 1280
+        }
+      ]
+    } ...
+  }>
+```
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
