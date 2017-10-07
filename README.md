@@ -72,7 +72,7 @@ When passing invalid credentials, the result will be something like this:
 When passing valid credentials, the result will be something like this:
 
 ```console
-#<struct ZypeSDK::UseCases::Login::Result
+=> #<struct ZypeSDK::UseCases::Login::Result
  status=:ok,
  content=
   {"access_token"=>"a-valid-access-token",
@@ -158,7 +158,82 @@ When passing an existent video id:
             "width" => 1280
         }
       ]
-    } ...
+      ...
+    } 
+  }>
+```
+
+### Videos
+
+You can use the video action like this:
+
+```ruby
+result = ZypeSDK.videos(per_page: 15, page: 2) # params are optional
+```
+
+If for some reason you passed an invalid app key during the sdk setup,
+the result will be something like this:
+
+```console
+=> #<struct ZypeSDK::UseCases::Videos::Result
+ status=:unauthorized,
+ content=
+  {"message"=>""message": "Invalid or missing authentication."}>   
+```
+
+When the method call succeeds:
+
+```console
+=> #<struct ZypeSDK::UseCases::Videos::Result
+ status=:ok,
+ content=
+  { "response" => [{
+      "_id" => "56a7b83169702d2f8336d9b7",
+      "active" => true,
+      "subscription_required" => false,
+      "title" => "Santa Baby - SNL",
+      "thumbnails" => [
+        {
+            "aspect_ratio" => 1.33,
+            "height" => 90,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/default.jpg",
+            "width"=> 120
+        },
+        {
+            "aspect_ratio" => 1.78,
+            "height" => 180,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/mqdefault.jpg",
+            "width" => 320
+        },
+        {
+            "aspect_ratio" => 1.33,
+            "height" => 360,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/hqdefault.jpg",
+            "width" => 480
+        },
+        {
+            "aspect_ratio" => 1.33,
+            "height" => 480,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/sddefault.jpg",
+            "width" => 640
+        },
+        {
+            "aspect_ratio" => 1.78,
+            "height" => 720,
+            "name" => null,
+            "url" => "https://i.ytimg.com/vi/CkrpvCs-kfE/maxresdefault.jpg",
+            "width" => 1280
+        }
+      ]
+      ...
+    }]
+    "pagination": {
+      ...
+    }
   }>
 ```
 
