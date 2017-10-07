@@ -10,17 +10,20 @@ module ZypeSDK
 
     Response = Struct.new(:status, :content)
 
-    def initialize(config)
+    def initialize(config = ZypeSDK)
       @config = config
     end
 
     def login(username:, password:)
-      user_credentials = "username=#{username}&password=#{password}"
-      client_credentials = "client_id=#{client_id}&client_secret=#{client_secret}"
-      params = "grant_type=password&#{user_credentials}&#{client_credentials}"
-      url = "#{BASE_LOGIN_URI}/oauth/token?#{params}"
+      options = { 
+        username: username, 
+        password: password, 
+        grant_type: 'password',
+        client_id: client_id,
+        client_secret: client_secret
+      }
 
-      zype_response = HTTParty.post(url)
+      zype_response = HTTParty.post("#{BASE_LOGIN_URI}/oauth/token", query: options)
       Response.new(zype_response.code, zype_response.parsed_response)
     end
 

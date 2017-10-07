@@ -9,6 +9,12 @@ Dotenv.load
 
 require 'zype_sdk'
 
+ZypeSDK.configure do |config|
+  config.app_key = ENV['ZYPE_APP_KEY']
+  config.client_id = ENV['ZYPE_CLIENT_ID']
+  config.client_secret = ENV['ZYPE_CLIENT_SECRET']
+end
+
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 

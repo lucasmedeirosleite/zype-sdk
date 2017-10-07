@@ -1,16 +1,24 @@
 # frozen_string_literal: true
 
+require 'caze'
+
 require_relative './zype_sdk/client'
 require_relative './zype_sdk/version'
 
+require_relative './zype_sdk/use_cases/videos'
+
 # Public: Entrypoint to the Zype API universe
 module ZypeSDK
+  include Caze
+
+  has_use_case :videos, UseCases::Videos
+
   Error = Class.new(RuntimeError).freeze
 
   class << self
     attr_writer :app_key, :client_id, :client_secret
 
-    def configuration
+    def configure
       yield self
     end
 

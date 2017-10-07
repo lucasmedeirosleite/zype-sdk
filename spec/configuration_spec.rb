@@ -4,12 +4,12 @@ require 'spec_helper'
 
 RSpec.describe ZypeSDK do
   describe 'api' do
-    it { expect(described_class).to respond_to(:configuration) }
+    it { expect(described_class).to respond_to(:configure) }
   end
 
   describe '.configuration' do
     subject(:configure) do
-      ZypeSDK.configuration do |config|
+      ZypeSDK.configure do |config|
         config.app_key = app_key
         config.client_id = client_id
         config.client_secret = client_secret
