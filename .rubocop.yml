@@ -2,6 +2,9 @@
 # This is the configuration used to check the rubocop source code.
 # It was based in some configurations from: https://github.com/bbatsov/rubocop/tree/master/config
 
+AllCops:
+  TargetRubyVersion: 2.4.2
+
 Metrics/LineLength:
   Max: 100
 

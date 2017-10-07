@@ -1,6 +1,6 @@
-# coding: utf-8
+# frozen_string_literal: true
 
-lib = File.expand_path("../lib", __FILE__)
+lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'zype_sdk/version'
 
@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Lucas Medeiros']
   spec.email         = ['lucastoc@gmail.com']
 
-  spec.summary       = %q{Zype SDK gem}
-  spec.description   = %q{A wrapper to the Zype Web API}
-  spec.homepage      = "https://github.com/lucasmedeirosleite/zype-sdk"
+  spec.summary       = %(Zype SDK gem)
+  spec.description   = %(A wrapper to the Zype Web API)
+  spec.homepage      = 'https://github.com/lucasmedeirosleite/zype-sdk'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
