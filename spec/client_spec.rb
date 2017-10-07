@@ -13,7 +13,7 @@ module ZypeSDK
     let(:app_key) { ENV['ZYPE_APP_KEY'] }
     let(:client_id) { ENV['ZYPE_CLIENT_ID'] }
     let(:client_secret) { ENV['ZYPE_CLIENT_SECRET'] }
-    
+
     describe 'api' do
       it { is_expected.to respond_to(:login) }
       it { is_expected.to respond_to(:video) }
@@ -66,7 +66,7 @@ module ZypeSDK
         end
       end
     end
-    
+
     describe '#videos' do
       subject(:videos) { client.videos(params) }
 
@@ -90,7 +90,7 @@ module ZypeSDK
           VCR.use_cassette('videos/valid_app_key') do
             response = videos
 
-            expect(response.status).to eq(200) 
+            expect(response.status).to eq(200)
             expect(response.content).to have_key('response')
             expect(response.content).to have_key('pagination')
           end
@@ -104,7 +104,7 @@ module ZypeSDK
           VCR.use_cassette('videos/valid_app_key_and_params') do
             response = videos
 
-            expect(response.status).to eq(200) 
+            expect(response.status).to eq(200)
             expect(response.content).to have_key('response')
             expect(response.content).to have_key('pagination')
           end
