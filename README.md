@@ -1,4 +1,4 @@
-# ZypeSDK
+# ZypeSDK [![Build Status](https://travis-ci.org/lucasmedeirosleite/zype-sdk.svg)](https://travis-ci.org/lucasmedeirosleite/zype-sdk) [![Code Climate](https://codeclimate.com/github/lucasmedeirosleite/zype-sdk/badges/gpa.svg)](https://codeclimate.com/github/lucasmedeirosleite/zype-sdk) [![Test Coverage](https://codeclimate.com/github/lucasmedeirosleite/zype-sdk/badges/coverage.svg)](https://codeclimate.com/github/lucasmedeirosleite/zype-sdk/coverage)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/zype_sdk`. To experiment with that code, run `bin/console` for an interactive prompt.
 
