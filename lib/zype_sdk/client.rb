@@ -18,7 +18,7 @@ module ZypeSDK
       user_credentials = "username=#{username}&password=#{password}"
       client_credentials = "client_id=#{client_id}&client_secret=#{client_secret}"
       params = "grant_type=password&#{user_credentials}&#{client_credentials}"
-      url = "#{BASE_LOGIN_URI}/oauth/token?#{params}"      
+      url = "#{BASE_LOGIN_URI}/oauth/token?#{params}"
 
       zype_response = HTTParty.post(url)
       Response.new(zype_response.code, zype_response.parsed_response)

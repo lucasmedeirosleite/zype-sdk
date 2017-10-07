@@ -59,8 +59,9 @@ module ZypeSDK
             response = login
 
             expect(response.status).to eq(200)
-            expect(response.content.keys).to include('access_token', 'token_type', 
-              'expires_in', 'refresh_token', 'scope', 'created_at')
+            expect(response.content.keys).to include(
+              'access_token', 'token_type', 'expires_in', 'refresh_token', 'scope', 'created_at'
+            )
           end
         end
       end
