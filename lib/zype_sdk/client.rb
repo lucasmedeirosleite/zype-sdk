@@ -15,9 +15,9 @@ module ZypeSDK
     end
 
     def login(username:, password:)
-      options = { 
-        username: username, 
-        password: password, 
+      options = {
+        username: username,
+        password: password,
         grant_type: 'password',
         client_id: client_id,
         client_secret: client_secret

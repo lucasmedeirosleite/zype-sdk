@@ -42,7 +42,7 @@ module ZypeSDK
         end
 
         context 'when no error happened and param were passed' do
-          let(:params) { { page: 2, per_page: 2 } } 
+          let(:params) { { page: 2, per_page: 2 } }
           let(:response) do
             double(:response, status: 200, content: content)
           end

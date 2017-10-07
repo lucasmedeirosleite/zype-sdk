@@ -1,10 +1,10 @@
-# frozen_string_literal
+# frozen_string_literal: true
 
 require 'caze'
 
 module ZypeSDK
-  # Public: Use case responsible to retrieve videos information
   module UseCases
+    # Public: Use case responsible to retrieve videos information
     class Videos
       include Caze
 
