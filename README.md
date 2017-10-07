@@ -1,38 +1,87 @@
 # ZypeSDK [![Build Status](https://travis-ci.org/lucasmedeirosleite/zype-sdk.svg)](https://travis-ci.org/lucasmedeirosleite/zype-sdk) [![Code Climate](https://codeclimate.com/github/lucasmedeirosleite/zype-sdk/badges/gpa.svg)](https://codeclimate.com/github/lucasmedeirosleite/zype-sdk) [![Coverage Status](https://coveralls.io/repos/github/lucasmedeirosleite/zype-sdk/badge.svg?branch=master)](https://coveralls.io/github/lucasmedeirosleite/zype-sdk?branch=master)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/zype_sdk`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
+## Installing
 
 ```ruby
-gem 'zype_sdk'
+gem 'zype_sdk', github: 'lucasmedeirosleite/zype-sdk', branch: master
 ```
 
-And then execute:
+## Configuring
 
-    $ bundle
+In some part of your code, or if you are using rails, put it in an initializer
 
-Or install it yourself as:
+```ruby
+ZypeSDK.configure do |config|
+  config.app_key = 'your-zype-app-key',
+  config.client_id = 'your-zype-client-id'
+  config.client_secret = 'your-zype-client-secret'
+end
+```
 
-    $ gem install zype_sdk
+## Using
 
-## Usage
+For now the ZypeSDK contains only three API Calls:
 
-TODO: Write usage instructions here
+* Login
+* Retrieve videos
+* Retrieve a video
 
-## Development
+## Responses
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+All three API calls have their return response together with a status, the status are represented
+in the table below.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### Endpoints
 
-## Contributing
+SDK Status | HTTP Status
+--- | --- 
+:ok | 200
+:unauthorized | 401
+:not_found | 404
+:internal_error | 500
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ZypeSDK.
+### Login
+
+You can use the login action like this:
+
+```ruby
+result = ZypeSDK.login(username: 'you@email.com', password: 'your-password')
+```
+
+If for some reason you passed an invalid client id or client secret during the sdk setup,
+the result will be something like this:
+
+```console
+=> #<struct ZypeSDK::UseCases::Login::Result
+ status=:unauthorized,
+ content=
+  {"error"=>"invalid_client",
+   "error_description"=>"Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method."}>   
+```
+
+When passing invalid credentials, the result will be something like this:
+
+```console
+=> #<struct ZypeSDK::UseCases::Login::Result
+ status=:unauthorized,
+ content=
+  {"error"=>"invalid_grant",
+   "error_description"=>"The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client."}>
+```
+
+When passing valid credentials, the result will be something like this:
+
+```console
+#<struct ZypeSDK::UseCases::Login::Result
+ status=:ok,
+ content=
+  {"access_token"=>"a-valid-access-token",
+   "token_type"=>"bearer",
+   "expires_in"=>604800,
+   "refresh_token"=>"a-valid-refresh-token",
+   "scope"=>"consumer",
+   "created_at"=>1507415028}>
+```
 
 ## License
 
