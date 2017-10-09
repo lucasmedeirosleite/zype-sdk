@@ -168,7 +168,7 @@ When passing an existent video id:
 You can use the video action like this:
 
 ```ruby
-result = ZypeSDK.videos(per_page: 15, page: 2) # params are optional
+result = ZypeSDK.videos(page: 2) # page param is optional
 ```
 
 If for some reason you passed an invalid app key during the sdk setup,

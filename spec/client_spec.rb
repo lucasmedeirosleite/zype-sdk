@@ -70,7 +70,7 @@ module ZypeSDK
     describe '#videos' do
       subject(:videos) { client.videos(params) }
 
-      let(:params) { {} }
+      let(:params) { { page: 1 } }
 
       context 'with invalid app key' do
         let(:app_key) { 'invalid-app-key' }
@@ -98,7 +98,7 @@ module ZypeSDK
       end
 
       context 'with valid app key and pagination params' do
-        let(:params) { { page: 2, per_page: 15 } }
+        let(:params) { { page: 2 } }
 
         it 'returns a valid response' do
           VCR.use_cassette('videos/valid_app_key_and_params') do

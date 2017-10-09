@@ -5,13 +5,13 @@ require 'spec_helper'
 module ZypeSDK
   module UseCases
     RSpec.describe Videos do
-      subject(:use_case) { described_class.new(params, client: client) }
+      subject(:use_case) { described_class.new(page: page, client: client) }
 
       let(:client) { double(:client) }
-      let(:params) { {} }
+      let(:page) { 1 }
 
       before do
-        allow(client).to receive(:videos).with(params).and_return(response)
+        allow(client).to receive(:videos).with(page: page).and_return(response)
       end
 
       describe '#get' do
@@ -42,7 +42,7 @@ module ZypeSDK
         end
 
         context 'when no error happened and param were passed' do
-          let(:params) { { page: 2, per_page: 2 } }
+          let(:page) { 2 }
           let(:response) do
             double(:response, status: 200, content: content)
           end
